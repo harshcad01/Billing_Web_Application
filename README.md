@@ -1,5 +1,3 @@
-# Billing_Web_Application
-
 # Project Description: Billing Web Application
 
 As part of my role as a software developer, I spearheaded the development of a comprehensive billing web application utilizing HTML/CSS, Bootstrap, JavaScript, C#, and Microsoft SQL Server. This project was structured using the MVC (Model-View-Controller) architecture to ensure modularity, maintainability, and scalability.
