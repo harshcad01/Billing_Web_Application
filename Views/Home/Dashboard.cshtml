@@ -1,0 +1,145 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<h4>@ViewData["Title"]</h4>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Box 1 content goes here -->
+            <div class="container mt-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <!-- Your box content goes here -->
+                        <p class="card-title">TOTAL ORDER</p>
+                        <h3 id="total-value">112</h3>
+                        <p class="card-text">TODAY's ORDER</p>
+                        <h3 id="today-value">23</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <!-- Box 2 content goes here -->
+            <div class="container mt-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <!-- Your box content goes here -->
+                        <p class="card-title">TOTAL PURCHASE</p>
+                        <h3 id="total-value">990</h3>
+                        <p class="card-text">TODAY's PURCHASE</p>
+                        <h3 id="today-value">178</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <!-- Box 3 content goes here -->
+            <div class="container mt-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <!-- Your box content goes here -->
+                        <p class="card-title">TOTAL SALE</p>
+                        <h3 id="total-value">1550</h3>
+                        <p class="card-text">TODAY's SALE</p>
+                        <h3 id="today-value">455</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <!-- Box 4 content goes here -->
+            <div class="container mt-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <!-- Your box content goes here -->
+                        <p class="card-title">TOTAL PRODUCT</p>
+                        <h3 id="total-value">569</h3>
+                        <p class="card-text">TODAY's PRODUCT</p>
+                        <h3 id="today-value">240</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <div class="row">
+        <!-- Product Display Area -->
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-title bg-dark bg-opacity-75 text-white">
+                    <nav class="navbar navbar-expand-lg text-light">
+                        <ul class="navbar-nav mt-1 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link text-light" href="ORDER">ORDER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="about.html">PURCHASE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="about.html">SALE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="about.html">PRODUCT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="card-body">
+                    <!-- Display products here -->
+                    <div class="container-fluid">
+                        <div class="container mt-lg-0">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-row bd-highlight mb-8">
+                                        <p class="mb-1 mr-3">MILK</p>
+                                        <p class="mb-1">Price: Rs-24.95</p>
+                                    </div>
+                                    <span class="badge badge-primary badge-pill">$19.99</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-row bd-highlight mb-8">
+                                        <p class="mb-1 mr-3">COLA 1/2 litter</p>
+                                        <p class="mb-1">Price: Rs-40</p>
+                                    </div>
+                                    <span class="badge badge-primary badge-pill">$29.99</span>
+                                </li>
+
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-row bd-highlight mb-8">
+                                        <p class="mb-1 mr-3">SUGAR</p>
+                                        <p class="mb-1">Price: Rs-39.99</p>
+                                    </div>
+                                    <span class="badge badge-primary badge-pill">$39.99</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-row bd-highlight mb-8">
+                                        <p class="mb-1 mr-3">Oil</p>
+                                        <p class="mb-1">Price: Rs149.99</p>
+                                    </div>
+                                    <span class="badge badge-primary badge-pill">$49.99</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-row bd-highlight mb-8">
+                                        <p class="mb-1 mr-3">Noodles</p>
+                                        <p class="mb-1">Price: Rs29.99</p>
+                                    </div>
+                                    <span class="badge badge-primary badge-pill">$49.99</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-row bd-highlight mb-8">
+                                        <p class="mb-1 mr-3"></p>
+                                        <p class="mb-1">Price: $49.99</p>
+                                    </div>
+                                    <span class="badge badge-primary badge-pill">$49.99</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

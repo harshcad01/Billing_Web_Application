@@ -1,0 +1,119 @@
+@{
+    ViewData["Title"] = "Supplier";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Supplier Management</h2>
+    <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#addSupplierModal"><i
+            class="fas fa-plus"></i> Add Supplier</button>
+
+    <!-- Supplier Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Contact Person</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample data, replace with dynamic data from your backend -->
+            <tr>
+                <td>1</td>
+                <td>Supplier 1</td>
+                <td>John Doe</td>
+                <td>supplier1@example.com</td>
+                <td>1234567890</td>
+                <td>
+                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                        data-target="#editSupplierModal"><i class="fas fa-edit"></i> Edit</button>
+                    <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Delete</button>
+                </td>
+            </tr>
+            <!-- Add more rows for other suppliers -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Add Supplier Modal -->
+<div class="modal fade" id="addSupplierModal" tabindex="-1" role="dialog" aria-labelledby="addSupplierModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addSupplierModalLabel">Add Supplier</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add Supplier Form -->
+                <form>
+                    <div class="form-group">
+                        <label for="supplierName">Supplier Name:</label>
+                        <input type="text" class="form-control" id="supplierName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPerson">Contact Person:</label>
+                        <input type="text" class="form-control" id="contactPerson">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Supplier Modal -->
+<div class="modal fade" id="editSupplierModal" tabindex="-1" role="dialog" aria-labelledby="editSupplierModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editSupplierModalLabel">Edit Supplier</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Edit Supplier Form -->
+                <form>
+                    <div class="form-group">
+                        <label for="editSupplierName">Supplier Name:</label>
+                        <input type="text" class="form-control" id="editSupplierName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editContactPerson">Contact Person:</label>
+                        <input type="text" class="form-control" id="editContactPerson">
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmail">Email:</label>
+                        <input type="email" class="form-control" id="editEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="editPhone">Phone:</label>
+                        <input type="text" class="form-control" id="editPhone">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>

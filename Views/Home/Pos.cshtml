@@ -1,0 +1,91 @@
+@{
+    ViewData["Title"] = "Point Of Sale";
+}
+<h4>@ViewData["Title"]</h4>
+
+
+<div class="container mt-3">
+    <div class="row">
+        <!-- Search Bar -->
+        <div class="col-lg-12 mb-3">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search products...">
+            <ul id="suggestions" class="list-group mt-1" style="display: none;"></ul>
+        </div>
+        <!-- Product Display Area -->
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    Products
+                </div>
+                <div class="card-body">
+                    <!-- Display products here -->
+                    <div class="mb-3">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <h5>Milk 1</h5>
+                                <p>Price: $10</p>
+                                <div class="form-inline">
+                                    <input type="number" class="form-control mr-2" placeholder="Quantity" min="1">
+                                    <button class="btn btn-sm btn-danger">&times;</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Add more product details here -->
+                    </div>
+                    <!-- Add more products here -->
+                </div>
+            </div>
+        </div>
+        <!-- Cart -->
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    Cart
+                </div>
+                <div class="card-body">
+                    <!-- Display items in cart here -->
+                    <h4>Customer Details</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <p>Name</p>
+                            <input type="text">
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <p>Phoneno</p>
+                            <input type="tel">
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <p>Address</p>
+                            <textarea name="" id="" cols="30" rows="2"></textarea>
+                        </li>
+
+                    </ul>
+                    <ul class="list-group">
+                        <!-- Example cart item: -->
+                        <h4 class="mt-2">Payment Details</h4>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <h5>You saved</h5>
+                            <span class="badge badge-primary badge-pill">$108</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <h5>MRP</h5>
+                            <span class="badge badge-primary badge-pill">$10867686</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <h5>Our Price</h5>
+                            <span class="badge badge-primary badge-pill">$10867686</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <h5>Total</h5>
+                            <span class="badge badge-primary badge-pill">$10867686</span>
+                        </li>
+                        <!-- Add more cart items here -->
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success btn-block">Process Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

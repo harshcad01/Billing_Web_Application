@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Customer";
+}
+
+<div class="container mt-5">
+    <h2>Customer List</h2>
+    <div class="card mt-3">
+        <div class="card-header bg-primary text-white">Customers</div>
+        <div class="card-body scrollable-table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="customer-list">
+                    <!-- Customer rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Add Customer Button -->
+    <button type="button" class="btn btn-primary mt-3" id="add-customer-btn">
+        Add Customer
+    </button>
+</div>

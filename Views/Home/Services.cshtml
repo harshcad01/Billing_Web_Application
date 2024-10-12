@@ -1,0 +1,105 @@
+@{
+    ViewData["Title"] = "Services";
+}
+
+
+<style>
+    /* Add custom CSS styles */
+    .service-card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .service-card .card-body {
+        padding: 2rem;
+    }
+
+    .service-card h5 {
+        font-weight: bold;
+    }
+
+    .service-card p {
+        color: #6c757d;
+    }
+
+    .navbar {
+        background-color: #ff0000 !important;
+        margin-bottom: 30px;
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+        color: #fff !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #000000 !important;
+    }
+
+    .container {
+        padding: 40px;
+    }
+</style>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Our Services</h1>
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card service-card">
+                <div class="card-body">
+                    <h5 class="card-title">API Integration</h5>
+                    <p class="card-text">
+                        Integrate our billing software API seamlessly into your desktop
+                        applications.
+                    </p>
+                    <ul>
+                        <li>Easy integration with various programming languages</li>
+                        <li>Comprehensive documentation and support</li>
+                        <li>Real-time data synchronization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card service-card">
+                <div class="card-body">
+                    <h5 class="card-title">Secure Transactions</h5>
+                    <p class="card-text">
+                        Ensure secure and encrypted transactions with our robust API.
+                    </p>
+                    <ul>
+                        <li>End-to-end encryption for sensitive data</li>
+                        <li>PCI-DSS compliant</li>
+                        <li>Transaction logging and auditing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card service-card">
+                <div class="card-body">
+                    <h5 class="card-title">Customizable Solutions</h5>
+                    <p class="card-text">
+                        Tailor our billing API to meet your specific business needs.
+                    </p>
+                    <ul>
+                        <li>Flexible pricing models</li>
+                        <li>Customizable billing cycles</li>
+                        <li>Scalable architecture for growing businesses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Add more service cards here -->
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center py-3 bg-dark text-light fixed-bottom">
+    <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+</footer>

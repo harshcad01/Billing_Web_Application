@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Sell";
+}
+<h4>@ViewData["Title"]</h4>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Product Display Area -->
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Products</div>
+                <div class="card-body">
+                    <!-- Display products here -->
+                    <!-- Example product: -->
+                    <div class="mb-3">
+                        <h5>Product 1</h5>
+                        <p>Price: $10</p>
+                        <input type="number" class="form-control" placeholder="Quantity" />
+                        <button class="btn btn-success mt-2">Add to Cart</button>
+                    </div>
+                    <!-- Add more products here -->
+                </div>
+            </div>
+        </div>
+        <!-- Cart -->
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Cart</div>
+                <div class="card-body">
+                    <!-- Display items in cart here -->
+                    <ul class="list-group">
+                        <!-- Example cart item: -->
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Product 1
+                            <span class="badge badge-primary badge-pill">$10</span>
+                        </li>
+                        <!-- Add more cart items here -->
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary btn-block">Process Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

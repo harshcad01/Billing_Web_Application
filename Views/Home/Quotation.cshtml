@@ -1,0 +1,55 @@
+@{
+    ViewData["Title"] = "Quotation";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Quotation Form -->
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    Create Quotation
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="customerName">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName"
+                                placeholder="Enter customer name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="products">Products</label>
+                            <textarea class="form-control" id="products" rows="3"
+                                placeholder="Enter products"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="totalAmount">Total Amount</label>
+                            <input type="text" class="form-control" id="totalAmount" placeholder="Total amount"
+                                readonly />
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Create Quotation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Quotation List -->
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Quotation List</div>
+                <div class="card-body">
+                    <!-- Display list of quotations here -->
+                    <ul class="list-group">
+                        <!-- Example quotation item: -->
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Quotation #001
+                            <span class="badge badge-primary badge-pill">$100</span>
+                        </li>
+                        <!-- Add more quotation items here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

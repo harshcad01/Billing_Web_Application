@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Analysis";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Analytics Page</h2>
+
+    <!-- Date range selection -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" class="form-control">
+        </div>
+    </div>
+
+    <!-- Charts section -->
+    <div class="row">
+        <!-- Sales Trend Chart -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sales Trend</h5>
+                    <canvas id="salesChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue vs Expenses Chart -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Revenue vs Expenses</h5>
+                    <canvas id="revenueExpensesChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+.navbar-nav .nav-link:hover {
+  color: #ff0000 !important;
+}
+
+#dashboardButton .custom-style {
+  background-color: black !important;
+  color: #ff0000 !important;
+  opacity: 75%;
+  border-left-color: #ff0000 !important;
+  border-left-width: 4px !important;
+  border-style: solid;
+}
+
+.list-group-item-action.custom-style:hover {
+  background-color: black !important;
+}
+
+
+.scrollable-card {
+  max-height: 500px; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.scrollable-table {
+  max-height: 400px; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+/* Add any custom styles here */
+.invoice-container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.invoice-header img {
+  max-width: 200px;
+  height: auto;
+}
+.invoices-wrapper {
+  max-height: 400px; /* Limit height of the wrapper */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+.expense-container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.expense-header img {
+  max-width: 200px;
+  height: auto;
+}
+
+

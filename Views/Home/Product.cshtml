@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Product";
+}
+
+<div class="container mt-3">
+    <div class="col-lg-13  mb-3">
+        <input type="text" class="form-control" id="searchInput" placeholder="Search products...">
+        <ul id="suggestions" class="list-group mt-1" style="display: none;"></ul>
+    </div>
+    <h2>Product List</h2>
+    <div class="card mt-3">
+        <div class="card-header bg-dark text-white">
+            Products
+        </div>
+        <div class="card-body scrollable-table"> <!-- Apply the scrollable-table class here -->
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Actions</th> <!-- New column for buttons -->
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                    <!-- Product rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Add Product Button -->
+    <button type="button" class="btn btn-primary mt-3" id="add-product-btn">Add Product</button>
+</div>

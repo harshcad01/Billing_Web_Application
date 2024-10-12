@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Mvcproject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
+
+    <style>
+        .custom-style {
+            background-color: black !important;
+            color: #ff0000 !important;
+            opacity: 0.75 !important;
+            border-left: 4px solid #ff0000 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-danger text-light">
+                    HMBS
+                </div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2 " id="dashboardButton"
+                        asp-area="" asp-controller="Home" asp-action="Dashboard">DASHBOARD</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Pos">POINT OF
+                        SALE</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2 " asp-area=""
+                        asp-controller="Home" asp-action="Sell">SELL</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2 " asp-area=""
+                        asp-controller="Home" asp-action="Quotation">QUOTATION</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Purchase">PURCHASE</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Stocktransfer">STOCK TRANSFER</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Product">PRODUCT</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Customer">CUSTOMER</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Supplier">SUPPLIER</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2 " asp-area=""
+                        asp-controller="Home" asp-action="Accounting">ACCOUNTING</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Expenditure">EXPENDITURE</a>
+                    
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Analysis">ANALYSIS</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Sms">SMS</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-2" asp-area=""
+                        asp-controller="Home" asp-action="Users">USER</a>
+                </div>
+            </div>
+
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-opacity-75 text-light border-bottom">
+                    <div class="container-fluid">
+                        <h6 class="fw-lighter" id="show-time">Time</h6>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-light" asp-area="" asp-controller="Home"
+                                        asp-action="Index">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" asp-controller="Home"
+                                        asp-action="Aboutus">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Others</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Home"
+                                            asp-action="Signin">Sign In</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Home"
+                                            asp-action="Login">Log In</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Home"
+                                            asp-action="some">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--HOME CONTENT HERE-->
+                <div>
+                    <div class="container">
+                        <main role="main" class="pb-3">
+                            @RenderBody()
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    @* <footer class="border-top footer text-muted">
+    <div class="container">
+    &copy; 2024 - Mvcproject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    </footer> *@
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Ensure this is before your script -->
+    <script src="~/js/myscript.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   
+    @await RenderSectionAsync("Scripts", required: false)
+
+    
+</body>
+
+</html>
